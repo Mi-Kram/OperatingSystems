@@ -1,0 +1,70 @@
+#!/bin/bash
+# args: Использование аргументов командной строки.
+
+# Получение числа аргументов в командной строке (без имени программы)
+echo -n "Number of arguments: "
+args=$#
+echo $args
+
+# Вывод списка параметров как единого значенич
+echo -n "All arguments: "
+echo    $*
+count=1
+for param in "$*"
+do
+  echo "\$* Parameter #$count = $param"
+  count=$(( $count + 1 ))
+done
+
+# Вывод списка параметров как множества элементов
+echo -n "All arguments as parameters: "
+echo    $@
+count=1
+for param in "$@"
+do
+  echo "\$@ Parameter #$count = $param"
+  count=$(( $count + 1 ))
+done
+
+# Вывод имени программы (нулевого аргумента)
+echo -n "Name of program: "
+echo    $0
+
+# Использование номеров аргументов в выражениях
+echo -n "arg1 + arg2 = "
+echo $[ $1 + $2 ]
+echo -n "arg1 - arg3 = "
+echo $[ $1 - $3 ]
+
+# Код завершения для последней операции
+echo -n "The last exit code: "
+echo    $?
+
+# Содержимое вершины стека каталогов
+echo -n "\$DIRSTACK: "
+echo  $DIRSTACK
+
+# Текстовый редактор по умолчанию
+echo -n "\$EDITOR: "
+echo  $EDITOR
+
+# Эффективный UID. Если вы использовали программу su
+# для выполнения команд от другого пользователя,
+# то эта переменная содержит UID этого пользователя
+echo -n "\$EUID: "
+echo  $EUID
+
+# Реальный идентификатор, который устанавливается только при логине
+echo -n "\$UID: "
+echo  $UID
+
+# Имя текущей функции в скрипте
+echo -n "\$FUNCNAME: "
+echo  $FUNCNAME
+
+# Массив групп к которым принадлежит текущий пользователь
+echo -n "\$GROUPS: "
+echo  $GROUPS
+
+# Код завершения для просмотра после завершения этого скрипта
+exit 10

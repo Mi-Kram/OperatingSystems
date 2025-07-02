@@ -1,0 +1,26 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en-CA" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="100" MadCap:lastWidth="972" MadCap:ignoredWords="clickable;s;TBA" MadCap:conditions="I.All" MadCap:disableMasterStylesheet="true" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" xml:lang="en-CA" MadCap:PathToHelpSystem="../" MadCap:HelpSystemFileName="index.xml" MadCap:SearchType="Stem">
+    <!-- saved from url=(0014)about:internet -->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Numeric/Text</title>
+        <link href="../Resources/Stylesheets/oracle.css" rel="stylesheet" />
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+    <script>window.ohcglobal || document.write('<script src="/en/dcommon/js/global.js">\x3C/script>')</script></head>
+    <body>
+        <h1>Numeric/Text<a name="kanchor220"></a></h1>
+        <p>Use the Numeric/Text format if the data entered into a field needs to be formatted as numbers <i>or</i> text.</p>
+        <p>For example, you may have an <i>Additional</i> coverage field such as <i>Glass Breakage</i>. For some policies, this would display a monetary numerical amount on the form, such as $100. However, other policies might require that this be a text value, such as <i>Included</i> or <i>Not Applicable</i>. The Numeric/Text field type allows either type of data to be entered into the field.</p>
+        <p>If the field value is numeric, then the numeric format will be applied, otherwise the text will be unchanged.</p>
+        <p>For example, with a format of $ZZ9.99, the value 10 would appear as $10.00, but a text value of N/A would appear unchanged by the format.</p>
+        <hr width="100%" size="0" align="center" />
+        <p class="Copyright"><i>© Copyright 2013, Oracle and/or its affiliates. All rights reserved. </i><a href="../Resources/MasterPages/Legal_Notices.html" style="font-style: italic;">Legal notices.</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+        <p class="MCWebHelpFramesetLink" style="display: none;"><a href="../index_CSH.html#help/Numeric_Text.html" style="font-family: Arial;font-size: 10pt;">Open table of contents</a>
+        </p>
+    </body>
+</html>

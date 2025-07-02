@@ -1,0 +1,14 @@
+#!/bin/bash
+echo -n "Please enter a value -> "
+read val
+echo "value is: $val"
+echo -n "Enter one or more values > "
+read
+echo "REPLY1 = '$REPLY'"
+read a b c
+echo "a = $a"
+echo "b = $b"
+echo "c = $c"
+echo "REPLY2 = '$REPLY'"
+REPLY=$c
+echo "REPLY3 = '$REPLY'"

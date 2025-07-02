@@ -1,0 +1,2 @@
+Digits: 123,abc,09,EF
+Count of groups: 4

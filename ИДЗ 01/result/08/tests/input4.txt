@@ -1,0 +1,70 @@
+
+OpenMarket.com
+Careers
+Customer Login
+Support
+Contact Us
+Logo
+Docs Home
+What We Offer
+»
+Messaging Products
+»
+MEP
+»
+Reporting
+»
+Global Coverage
+»
+Search
+Filter:
+Submit Search
+MEP Expression Language
+
+Table of Contents
+Overview
+What's New
+Variables
+Functions
+Text & Digit Syntax
+Use in Services
+Use in Broadcasts
+Use in Subscriptions
+Using Regular Expressions in EL
+Variables Reference
+Functions Reference
+Operator Reference
+Scope Reference
+Text and Digit Syntax
+Text string syntax
+To include a text string in an expression, you need to surround the string in single or double quotes. For example, the value of the following example is hello:
+
+${"hello"}
+If you need to include quote marks within the string itself, enter them as \' or \"; if you need to include a backslash, enter it as \\. For example, to get the value:
+
+The "lol-cats" are found here: \example\cats
+you would need to format the text as follows:
+
+${"The \"lol-cats\" are found here: \\example\\cats"}
+Unlike with variable names, you do not need to avoid reserved words in alphanumeric strings. For example, the expression ${"null"} would return the text "null" rather than mean the expression had no value. However, there are two exceptions to this: MEP can evaluate the strings "true" and "false" as Boolean values; for example MEP can branch a service on the expressions ${"true"} and ${true}.
+
+Digit syntax
+You can use integers and floating point numbers in an expression "as is" — there is no need to delimit the numbers in anyway. For example, the following expression adds two integers together:
+
+${1 + 1}
+Note that if you mix integers and floating point numbers within the same expression, the integer will be changed to a floating point number automatically.
+
+To create a text string that contains a calculation (but does not resolve it), delimit the calculation with quote marks; for example ${"1 + 1"} returns the text 1 + 1, and not the value 2.
+
+You can calculate a numerical value in an expression that contains digits, variable and functions as long as the variables and functions resolve to numbers. For example, you could compare whether a randomly generated number was below or equal to another number:
+
+${af:random(24) <= 23}
+The next example adds a number to a custom variable. In this example, the variable userservice.Count is an integer variable associated with the end user. Each time an end user accesses the service, the following expression increases the value of userservice.Count by one:
+
+${userservice.Count + 1}
+However, if the variable userservice.Count was a text string saying Bob, then attempting to add a number to it would cause the MEP service to return an error.
+
+ 
+
+Products & Services Use Cases Resources Partners Network Contact
+©2025 OpenMarket. All rights reserved.Legal InformationOur Cookie PolicyGDPR CompliancePreference Center

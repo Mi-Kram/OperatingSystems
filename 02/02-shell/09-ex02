@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Script started:"; ls -al .; whoami; uname -a; cat 08-ex01; echo "The End!"

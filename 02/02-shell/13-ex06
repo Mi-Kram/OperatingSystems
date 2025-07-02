@@ -1,0 +1,18 @@
+
+#!/bin/bash
+echo "Script started. Input a and b: "
+read a b
+
+echo "Before a = $a"
+echo "Before b = $b"
+echo "Before c = $c"
+
+c=$a
+a=$b
+b=$c
+
+echo "After a = $a"
+echo "After b = $b"
+echo "After c = $c"
+
+echo "The End!"
